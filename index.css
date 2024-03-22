@@ -1,0 +1,279 @@
+@font-face {
+    font-family: 'Avenir';
+    src: url('/font/Avenir\ Next\ \(1\)\ \(1\)\ \(1\)\ \(1\).ttc') format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Avenir, Helvetica, sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+.main-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.img-section {
+    width: 50%;
+    height: 100%;
+}
+
+#main-img {
+    width: 100%;
+    height: 100%;
+}
+
+
+@media only screen and (min-width: 600px) {
+    .main-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .card-container {
+        width: 650px;
+    }
+}
+
+.main-section {
+    padding-left: 15%;
+}
+
+#header {
+    font-size: 30px; 
+    font-weight: 900;
+}
+
+#info {
+    font-size: 13px;
+    margin: 1em 0; 
+    color: #797979;
+}
+
+#items {
+    width: 25%;
+    text-align: left;
+    border: none;
+    background-color: transparent;
+    font-weight: bold;
+    border-bottom: 2px solid black;
+    padding-bottom: 0.5em;
+}
+
+#items-btn:hover {
+    cursor: pointer;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 2em;
+    margin-top: 3em;
+    overflow-x: auto;
+}
+
+.card-container::-webkit-scrollbar {
+    display: none;
+  }
+
+.card-container p {
+    font-size: 12px;
+    margin: 0.5em 0;
+}
+
+.mob-header {
+    display: none;
+}
+
+.card-body {
+    position: relative;
+}
+
+#product-img {
+    width: 225px;
+    height: 300px;
+}
+
+.color-btn {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: none;
+    position: absolute;
+    bottom: 10px;
+    transform: translate(50%, 50%);
+}
+
+#color-btn1 {
+    background-color: #2CC35D;
+    right: 10px;
+}
+
+    #color-btn1:hover {
+        border: 1px solid black;
+        cursor: pointer;
+    }
+
+#color-btn2 {
+    background-color: #CC9999;
+    right: 30px;
+
+}
+
+    #color-btn2:hover {
+        border: 1px solid black;
+        cursor: pointer;
+    }
+
+#color-btn3 {
+    background-color: #CB99CC;
+    right: 50px;
+}
+
+    #color-btn3:hover {
+        border: 1px solid black;
+        cursor: pointer;
+    }
+
+#color-btn4 {
+    background-color: #99C3CC;
+    right: 70px;
+}
+
+    #color-btn4:hover {
+        border: 1px solid black;
+        cursor: pointer;
+    }
+
+#slider-btn-next {
+    position: absolute;
+    right: 10px;
+    bottom: 30%;
+    z-index: 1;
+    width: 35px;
+    height: 35px;
+    background-color: transparent;
+    border: 1px solid #797979;
+    font-size: 20px;
+}
+
+#slider-btn-previous {
+    position: absolute;
+    right: 40%;
+    bottom: 30%;
+    z-index: 1;
+    width: 35px;
+    height: 35px;
+    background-color: transparent;
+    border: 1px solid #797979;
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    .main-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+
+    .img-section {
+        width: 110%;
+        height: 60%;
+    }
+
+    #main-img {
+        width: 100%;
+        max-height: 100%;
+    }
+
+    .main-section {
+        width: 100%;
+        padding-left: 5%;
+        position: absolute;
+        top: 35%;
+    }
+
+    #header {
+        font-size: 25px;
+        width: 100%;
+        color: white;
+        padding-bottom: 1em;
+    }
+
+    #info {
+        display: none;
+    }
+
+    #items {
+        width: 37%;
+        color: white;
+        border-color: white;
+    }
+
+    .card-container {
+        height: 350px;
+        margin-top: 2em;
+        column-gap: 1em;
+    }
+
+    .card-container p {
+        font-size: 15px;
+        margin: 0.2em 0;
+    }
+
+    .mob-header {
+        display: block;
+    }
+
+    .desk-header {
+        display: none;
+    }
+
+    .color-btn {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        border: none;
+        position: absolute;
+        bottom: 0;
+        transform: translate(0, 75%);
+    }
+
+    #color-btn1 {
+        background-color: #2CC35D;
+        left: 60px;
+    }
+
+    #color-btn2 {
+        background-color: #CC9999;
+        left: 40px;
+    }
+
+    #color-btn3 {
+        background-color: #CB99CC;
+        left: 20px;
+    }
+
+    #color-btn4 {
+        background-color: #99C3CC;
+        left: 0;
+    }
+
+    #product-img {
+        width: 175px;
+        height: 250px;
+    }
+
+    #slider-btn-next, #slider-btn-previous {
+        display: none;
+    }
+}
